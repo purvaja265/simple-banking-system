@@ -1,4 +1,4 @@
-# Flask application for simple banking system
+# Flask application for simple banking system - INTERNSHIP PROJECT
 
 > simple bank application with 10 customers. customers can tranfer their money to other customers and view all the transactions.
 
