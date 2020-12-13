@@ -7,7 +7,7 @@
 ## Quick Start
 
 ```bash
-# Add your DATABASE URI in app.py and your mail params in send_mail.py
+# Add your DATABASE URI in app.py
 
 # Install dependencies
 pipenv shell
