@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Please rate your service</title>
+  </head>
+  <body>
+    <div align="center">
+      <h2>
+        LIST OF CUSTOMERS
+      </h2>
+    </div>
+   <div>
+       <table border="1px solid black" align="center" class="table table-bordered">
+        {% block content %}
+        {% for user in users %}
+          <tr>
+          <td>
+              <a href="/customers/{{ user.customer }}">{{ user.customer }}</a> 
+          </td>
+          <td>
+              {{ user.email }}
+          </td>
+          <td>
+              {{ user.balance }}
+          </td>
+          </tr>
+        {% endfor %}
+        {% endblock content %}
+       </table>
+   </div>
+  </body>
+</html>

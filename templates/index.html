@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/style.css" />
+    <title>Simple banking system</title>
+  </head>
+  <body>
+    {% if message %}
+    <p style = { text-align:"center"; color:"green"}  class="message">{{ message }}</p>
+    {% endif %}
+    <h2 class="page-header " style="text-align: center;color: purple"> WELCOME TO BASIC BANKING SYSTEM </h2>
+    <a href="/customers"> <button type="button" class="btn btn-primary btn-lg">VIEW ALL CUSTOMERS </button></a>
+    <a href="/transfers"> <button type="button" class="btn btn-primary btn-lg">SHOW ALL TRANSFERS </button> </a>
+  </body>
+  
+</html>
