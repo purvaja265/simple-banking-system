@@ -1,6 +1,6 @@
-# Python Feedback App
+# Flask application for simple banking system
 
-> Python Flask Feedback app that sends data to Postgres database and emails user
+> simple bank application with 10 customers. customers can tranfer their money to other customers and view all the transactions.
 
 ## Quick Start
 
@@ -14,7 +14,3 @@ pipenv install
 # Serve on localhost:5000
 python app.py
 ```
-
-### Heroku Deployment Steps
-
-https://gist.github.com/bradtraversy/0029d655269c8a972df726ed0ac56b88
